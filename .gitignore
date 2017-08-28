@@ -1,0 +1,8 @@
+/*
+/*/
+!/src/
+!build.gradle
+!README.md
+!.gitignore
+!salon.sql
+!Procfile
