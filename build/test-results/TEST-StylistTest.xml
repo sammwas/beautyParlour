@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="StylistTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2017-08-28T05:03:09" hostname="mwas-Lenovo-ideapad" time="0.7">
+  <properties/>
+  <testcase name="stylist_instantiatesCorrectly_true" classname="StylistTest" time="0.263"/>
+  <testcase name="all_returnsAllInstancesOfStylist_true" classname="StylistTest" time="0.121"/>
+  <testcase name="getTasks_retrievesAllTasksFromDatabase_tasksList" classname="StylistTest" time="0.133"/>
+  <testcase name="clear_clearsAllStylistFromList_0" classname="StylistTest" time="0.011"/>
+  <testcase name="equals_returnsTrueIfNamesAreTheSame" classname="StylistTest" time="0.036"/>
+  <testcase name="getId_stylistInstantiatesWithAnId_1" classname="StylistTest" time="0.019"/>
+  <testcase name="find_returnsStylistWithSameId_stylistTwo" classname="StylistTest" time="0.043"/>
+  <testcase name="getName_stylistInstantiatesWithName_Matata" classname="StylistTest" time="0.005"/>
+  <testcase name="getClients_initiallyReturnsEmptyList_ArrayList" classname="StylistTest" time="0.009"/>
+  <testcase name="save_savesIntoDatabase_true" classname="StylistTest" time="0.018"/>
+  <testcase name="save_assignsIdToObject" classname="StylistTest" time="0.022"/>
+  <testcase name="getName_stylistInstantiatesWithSkills_Braids" classname="StylistTest" time="0.005"/>
+  <testcase name="find_returnsNullWhenNoClientsAreFound" classname="StylistTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

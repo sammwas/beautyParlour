@@ -1,0 +1,12 @@
+<div class="page-header">
+  <h1> <small>Our Stylists</small></h1>
+</div>
+<ul>
+  #foreach($stylist in $stylists)
+  <div class="well well-sm">
+    <li><a href="/stylists/$stylist.getId()">$stylist.getName()</a></li>
+  </div>
+
+  #end
+</ul>
+<a href="/stylists/new"><button class="btn-info">Add a Stylist</button></a>

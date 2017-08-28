@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ClientTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2017-08-28T05:03:10" hostname="mwas-Lenovo-ideapad" time="0.307">
+  <properties/>
+  <testcase name="getId_clientsInstantiateCorrectlyWithAnId_1" classname="ClientTest" time="0.019"/>
+  <testcase name="save_savesStylistIdIntoDB_true" classname="ClientTest" time="0.043"/>
+  <testcase name="save_assignsIdToClientObject" classname="ClientTest" time="0.035"/>
+  <testcase name="update_updateClientName_true" classname="ClientTest" time="0.065"/>
+  <testcase name="equals_returnsTrueIfDescriptionsAreTheSame" classname="ClientTest" time="0.009"/>
+  <testcase name="getName_clientsInstantiateWithName_String" classname="ClientTest" time="0.009"/>
+  <testcase name="Client_instantiatesCorrectly_true" classname="ClientTest" time="0.01"/>
+  <testcase name="clear_emptiesAllClientsFromArrayList_0" classname="ClientTest" time="0.02"/>
+  <testcase name="delete_deletesClient_true" classname="ClientTest" time="0.052"/>
+  <testcase name="find_returnsClientsWithSameStylistId_clientTwo" classname="ClientTest" time="0.04"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

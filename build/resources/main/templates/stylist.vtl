@@ -1,0 +1,69 @@
+<div class="page-header">
+  <h1> <small>$stylist.getName()'s Details</small></h1>
+</div>
+
+
+<div class="well well-sm">
+  <label for="Name">Name</label>
+  $stylist.getName()
+</div>
+
+<div class="well well-sm">
+  <label for="Skills">Skills</label>
+  $stylist.getSkills()
+</div>
+
+<!-- Trigger the modal with a button -->
+<button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">Update Details</button>
+<br>
+  <!-- Modal -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Edit Details</h4>
+        </div>
+        
+        <div class="modal-body">
+          <form action="/stylists/$stylist.getId()" method="post">
+            <label for="name">Stylist name</label>
+            <input id="name" name="name" type="text" class="form-control">
+
+            <label for="skills"> Stylist skills</label>
+            <input id="skills" name="skills" type="text" class="form-control">
+
+            <button type="submit" class="btn btn-success">Save</button>
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+<br>
+
+<form action="/stylists/$stylist.getId()/delete" method="post">
+  <button type="submit" class="btn btn-danger">Delete Stylist</button>
+
+</form>
+
+<h2>$stylist.getName()'s Clients:</h2>
+
+<div class="well well-sm">
+
+  <ul>
+    #foreach($client in $stylist.getClients())
+    #if($client)
+    <li>
+      <a href="/stylists/$stylist.getId()/clients/$client.getId()">$client.getName()</a>
+    </li>
+    #else
+    <p>No Clients yet</p>
+    #end
+    #end
+  </ul>
+<a href="/stylists/$stylist.getId()/clients/new"><button class="btn btn-success">Add Client</button></a>

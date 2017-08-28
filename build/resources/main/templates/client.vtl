@@ -1,0 +1,18 @@
+<div class="page-header">
+  <h1> <small>$client.getName()'s Details</small></h1>
+</div>
+
+<div class="well well-sm">
+  <strong>$client.getName()</strong>
+</div>
+
+<form action="/stylists/$client.getStylistId()/clients/$client.getId()" method="post">
+  <label for="name">name</label>
+  <input id="name" name="name" type="text" class="form-control">
+
+  <button type="submit" class="btn btn-info">Update Details</button>
+</form><br>
+<form action="/stylists/$client.getStylistId()/clients/$client.getId()/delete" method="post">
+  <button type="submit" class="btn btn-danger">Delete Client</button>
+
+</form>
