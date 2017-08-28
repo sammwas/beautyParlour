@@ -1,1 +1,1 @@
-web: ./build/install/beautyParlour/bin/beautyParlou
+web: ./build/install/beautyParlour/bin/beautyParlour
